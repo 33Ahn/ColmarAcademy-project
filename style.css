@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
+    color: rgb(58, 58, 58);
     margin: 0;
     padding: 0;
 }
@@ -62,15 +63,11 @@ li {
 
 /* Banner section */
 
-main {
-    background-color: #cccccc;
-}
-
 .banner {
+    background-color: #cccccc;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .banner-image {
@@ -86,7 +83,7 @@ main {
 .banner-writing {
     margin-left: 1.5rem;
     margin-right: 3rem;
-    color: rgb(58, 58, 58);
+    /* color: rgb(58, 58, 58); */
 }
 
 .banner-writing h1 {
@@ -105,3 +102,102 @@ button {
     text-align: center;
 }
 
+/* Orientation Section */
+
+.orientation {
+    display: flex;   
+}
+
+.orientation-col {
+    width: 60%;
+    height: auto;
+}
+
+.orientation-col img {
+    width: 95%;
+    margin: 2rem 1.5rem;
+}
+
+.orientation-col h2 {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.orientation-col p {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1.5rem;
+}
+
+.orientation-col2 {
+   width: 40%;
+   height: auto;
+}
+
+.orientation-info {
+    display: flex;
+    justify-content: flex-start;
+    border: 0.2rem solid #cccccc;
+    border-top: 0;
+}
+
+.orientation-info img {
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+.orientation-date {
+    position: relative;
+    top: 2.5rem;
+}
+
+.orientation-date a{
+    text-decoration: none;
+}
+
+.orientation-campus {
+    display: flex;
+    justify-content: flex-start;   
+    border: 0.2rem solid #cccccc;
+    border-top: 0;
+}
+
+.orientation-campus img {
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+.orientation-location {
+    position: relative;
+    top: 2.5rem;
+}
+
+.orientation-location a {
+    text-decoration: none;
+}
+
+.orientation-lecture {
+    display: flex;
+    justify-content: flex-start;   
+    border: 0.2rem solid #cccccc;
+    border-top: 0;
+    background-color: #cccccc;
+}
+
+.orientation-lecture img {
+    width: 35%;
+    height: auto;
+    margin: 1rem;
+}
+
+.orientation-guest {
+    position: relative;
+    top: 2.5rem;
+}
+
+.orientation-lecture a {
+    text-decoration: none;
+}
