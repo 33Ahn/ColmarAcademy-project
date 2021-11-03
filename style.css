@@ -10,6 +10,10 @@ body {
 
 /*  Nav Section */
 
+header {
+    height: 4rem;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -18,6 +22,7 @@ nav {
 #logo {
     display: inline-flex;
     margin-left: 1.5rem;
+    margin-top: 0.7rem;
 }
 
 #academy {
@@ -38,6 +43,11 @@ nav {
 #signin {
     margin-right: 1.5rem;
 }
+
+#icon-for-sm-screen {
+    display: none;
+}
+
 
 
 /* Banner section */
@@ -84,6 +94,52 @@ button {
     border: none;
 }
 
+
+
+@media only screen and (max-width: 767px) {
+    /* Nav Section */
+    #logo p,
+    .nav-links a {
+        display: none;
+    }
+    
+    #icon-for-sm-screen, #show {
+        display: inline-block;
+        margin-top: 0.7rem;  
+        margin-right: 1.8rem;     
+        /* background-color: lime; */
+    }
+
+    /* Banner Section media query*/
+    .banner-container {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    #banner-image-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    #banner-image-container img {
+        max-width: 100%;
+    }
+
+    .banner-text-container {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    button {
+        background-color: rgb(160, 160, 160);
+        width: 90%;
+    }
+
+}
 
 /* Orientation Section */
 
