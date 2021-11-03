@@ -1,19 +1,17 @@
-html {
-    font-size: 16px;
-}
-
+html,
 body {
     font-family: Helvetica, sans-serif;
-    color: rgb(58, 58, 58);
+    font-size: 16px;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 header {
     height: 4rem;
-    /* background-color: red; */
     display: flex;
-    align-items: center;
+   justify-content: space-between;
+   align-items: center;
 }
 .nav-items {
     list-style: none;
@@ -25,12 +23,11 @@ header {
 }
 
 li {
-    /* display: inline-block;    */
+    display: inline-flex;
 }
 
 .nav-logo {
-    margin-left: 1.5rem;
-    
+    margin-left: 1.5rem;    
 }
 
 .nav-brand {
@@ -71,35 +68,41 @@ li {
 }
 
 .banner-image {
-    width: 60%;    
+    width: 60%;
+    height: auto;    
     /* padding: 2rem 1.5rem; */
 }
 
 .banner-image img {
     width: 95%;
+    height: auto;
+
     margin: 2rem 1.5rem;
 }
 
 .banner-writing {
+    width: 40%;
+    height: auto;
     margin-left: 1.5rem;
     margin-right: 3rem;
     /* color: rgb(58, 58, 58); */
 }
 
-.banner-writing h1 {
-    font-size: 3.5rem;
+/* .banner-writing h1 {
+    font-size: 3rem;
 }
 
 .banner-writing p {
     font-size: 2.1rem;
-}
+} */
 
 button {
     background-color: rgb(58, 58, 58);
     border: none;
     color: white;
-    padding: 0.5rem 12.3rem;
+    padding: 0.5rem;
     text-align: center;
+    width: 60%;
 }
 
 /* Orientation Section */
@@ -139,13 +142,16 @@ button {
     display: flex;
     justify-content: flex-start;
     border: 0.2rem solid #cccccc;
-    border-top: 0;
+    border-top: 0;       
 }
 
 .orientation-info img {
     width: 35%;
     height: auto;
-    margin: 1rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem
 }
 
 .orientation-date {
@@ -181,23 +187,266 @@ button {
 
 .orientation-lecture {
     display: flex;
-    justify-content: flex-start;   
+    justify-content: flex-start; 
+    align-content: space-around;  
     border: 0.2rem solid #cccccc;
     border-top: 0;
     background-color: #cccccc;
+    margin-bottom: 2rem;
 }
 
 .orientation-lecture img {
     width: 35%;
     height: auto;
-    margin: 1rem;
+    margin: 1rem 1rem;
 }
 
 .orientation-guest {
     position: relative;
-    top: 2.5rem;
+    top: 2rem;
+}
+
+.orientation-guest p {
+    font-size: 0.8rem;
+}
+
+.orientation-date p {
+    font-size: 0.8rem;
+}
+
+.orientation-location p {
+    font-size: 0.8rem;
 }
 
 .orientation-lecture a {
     text-decoration: none;
+}
+
+/* Start learning Section */
+
+.learning.container {
+    display: block;
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+}
+
+.learning.container.heading {
+    display: flex;
+    justify-content: center;    
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+}
+
+.heading h1 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.tile-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.course {
+    width: 25%;
+    background-color: white;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.course img {
+    display: flex;
+    width: 100%;
+}
+
+.course h2 {
+    padding-left: 1rem;
+    color:rgb(58, 58, 58);
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.course span {
+    font-weight: lighter;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    color:rgb(165, 162, 162);
+}
+
+.course p {
+    font-weight: lighter;
+    padding-left: 1rem;
+    width: 80%;
+    color:rgb(165, 162, 162);
+    margin-top: 0.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.1rem;
+    background-color: red;
+}
+
+/* Thesis exhibit Section */
+
+.thesis.container {
+    display: flex;
+    width: 100%;
+    display: block;
+}
+
+.thesis.container .heading {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.heading h2 {
+    font-size: 2.5rem;
+}
+
+.thesis.info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0;
+    /* background-color: salmon; */
+}
+
+.video.info {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 1.5rem;
+    margin-top: 0;
+    align-items: flex-start;
+}
+
+video {
+    width: 100%;
+}
+
+.video.info h2 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.thesis.container p {
+    color:rgb(165, 162, 162);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: lighter; 
+    font-size: 1rem;  
+}
+
+.thesis .side-banner {
+    width: 34.5rem;
+    margin-top: 0;
+    /* display: block; */
+}
+
+.banner .info .keynote {
+    background-color:rgb(165, 162, 162);
+    width: 40%;
+    height: 10.5rem;
+}
+
+.thesis .banner .info {
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    height: 12.5rem;
+}
+
+.banner .info img {
+    width: 35%;
+    height: auto;
+    padding: 1rem;
+}
+
+.thesis img {
+    margin: 1rem;
+}
+
+.banner .info .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.banner .info .keynote h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(53, 52, 52);
+}
+
+.banner .info h2 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.banner .info .keynote p {
+    font-size: 1.2rem;
+}
+
+.banner .info p {
+    margin-top: 0.5rem;
+}
+
+.thesis .container p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+p {
+    font-weight: lighter;
+}
+
+.thesis .banner .info {
+    display: flex;
+    flex-direction: row;
+    width: 30rem;
+    height: 12.5rem;
+}
+
+.banner .info img {
+    width: 12.5rem;
+    padding: 0.5rem;
+}
+
+.thesis img {
+    margin: 1rem;
+}
+
+/* Footer Section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    margin-right: 1.5rem;
 }
