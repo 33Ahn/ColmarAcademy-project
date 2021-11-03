@@ -42,50 +42,48 @@ nav {
 
 /* Banner section */
 
-.banner {
-    background-color: #cccccc;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.banner-image {
-    width: 60%;
-    height: auto;    
-    /* padding: 2rem 1.5rem; */
-}
-
-.banner-image img {
-    width: 95%;
+.banner-container {
+    display: inline-flex;
+    background-color: lightgray;
+    width: 100%;
     height: auto;
+}
 
+.banner-text-container {
+    width: 40%;
+    height: auto;
+    margin: auto;
+}
+
+#banner-image-container {
+    width: 60%;
+    margin: 2rem 1.5rem;
+    height: auto;
+}
+
+#banner-image {
+    width: 100%;
+    height: auto;
+}
+
+#banner-text {
+    color:rgb(53, 52, 52);
+    align-content: center;
     margin: 2rem 1.5rem;
 }
 
-.banner-writing {
-    width: 40%;
-    height: auto;
-    margin-left: 1.5rem;
-    margin-right: 3rem;
-    /* color: rgb(58, 58, 58); */
+#banner-text-p {
+    padding: 1.5rem 0;
 }
-
-/* .banner-writing h1 {
-    font-size: 3rem;
-}
-
-.banner-writing p {
-    font-size: 2.1rem;
-} */
 
 button {
-    background-color: rgb(58, 58, 58);
-    border: none;
-    color: white;
-    padding: 0.5rem;
-    text-align: center;
     width: 60%;
+    background-color:rgb(53, 52, 52);
+    padding: 0.5rem;
+    color: white;
+    border: none;
 }
+
 
 /* Orientation Section */
 
@@ -206,7 +204,7 @@ button {
 
 /* Start learning Section */
 
-.learning.container {
+/* .learning.container {
     display: block;
     width: 100%;
     background-color: rgb(226, 226, 226);
@@ -413,7 +411,7 @@ p {
 
 .thesis img {
     margin: 1rem;
-}
+} */
 
 /* Footer Section */
 
